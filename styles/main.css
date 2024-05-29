@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header .logo-text {
+  font-family: "Shrikhand";
+}
+
+/*# sourceMappingURL=main.css.map */
