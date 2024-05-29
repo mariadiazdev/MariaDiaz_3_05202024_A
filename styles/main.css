@@ -1,13 +1,47 @@
 body {
   font-family: "Roboto";
+  margin: 0px;
+}
+
+.logo-text {
+  font-family: "Shrikhand";
 }
 
 header {
   display: flex;
   justify-content: center;
 }
-header .logo-text {
-  font-family: "Shrikhand";
+
+.discover-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.discover-section .discover_location {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.discover-section button {
+  color: white;
+  background-color: #FF79DA;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 16px;
+  width: 30%;
+  padding: 10px;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer ul {
+  list-style: none;
 }
 
 /*# sourceMappingURL=main.css.map */
