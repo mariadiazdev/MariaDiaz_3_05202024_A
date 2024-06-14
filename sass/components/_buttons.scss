@@ -1,0 +1,24 @@
+button {
+    color: white;
+    background-color: #FF79DA;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 16px;
+    width: 30%;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, $secondary_color, $primary_color);
+
+
+
+    &__heart{
+        color:red($color: #000000);
+
+        &__filledin{
+            color: #000000;
+        }
+    }
+
+}
+

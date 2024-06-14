@@ -1,0 +1,20 @@
+.discover {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__location {
+        background-color: $grey-shade;
+        height:40px;
+        gap:15px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+        box-shadow: inset 0px 5px 10px 1px gray;
+        p{
+            margin:0px;
+        }
+    }
+
+}
