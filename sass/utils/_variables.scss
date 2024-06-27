@@ -1,7 +1,15 @@
 $primary_color: #9356DC;
 $secondary_color: #FF79DA;
-$tertiary_color: #99E2D0;
-$grey-shade: #EAEAEA;
+$mint_color: #99E2D0;
+$light-gray: #F6F6F6;
+$gray: #EAEAEA;
 $dark-gray: #353535;
 $logo_font: "Shrikhand";
 $text_font: "Roboto";
+$grey-shade: #EAEAEA;
+$drop-shadow: #ccc;
+
+$breakpoints: (
+    desktop: 1024px,
+    tablet: 599px
+);

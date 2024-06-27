@@ -1,5 +1,40 @@
-footer {
+
+.footer {
     background-color: $dark-gray;
+    color: white;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     
-    color:white;
+    
+    @include desktop-only {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 20px;
+        padding-top: 40px;
+    }
+    @include tablet-only {
+        justify-content: center;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+
+        padding:0px;
+        @include desktop-only {
+            flex-direction: row;
+            gap: 20px; 
+        }
+    }
+
+
+    
+}
+
+footer a {
+    display: flex;
+    flex-direction: row;
+    gap:12px;
 }
