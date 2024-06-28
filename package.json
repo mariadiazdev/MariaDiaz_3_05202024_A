@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./styles/main.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./styles/main.css --style compressed",
+    "prefix": "postcss ./styles/main.css --use autoprefixer -d ./styles/prefixed/"
+    
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "description": "",
   "dependencies": {
     "@fontsource/shrikhand": "^5.0.20",

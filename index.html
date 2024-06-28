@@ -13,35 +13,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link type="text/css" rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
 
 </head>
 
 <body>
     <header>
-        <h1 class="logo-text">ohmyfood</h1>
+        <img src="./assets/logo/ohmyfood.png" alt="logo of ohmyfood" />
     </header>
-    <div class="discover-section">
-        <div class="discover_location">
+    <section class="discover">
+        <div class="discover__location">
             <i class="fa-solid fa-location-dot location-icon"></i>
-            <p>Paris Ballevile</p>
+            <p>Paris, Bellevile</p>
         </div>
-        <h1 class="discover_heading"> Book the menu you like</h1>
-        <p>Discover top-of-the-art menus we picked for you </p>
-        <button>Explore our resturants</button>
+        <h1 class="discover__heading"> Book the menu you like</h1>
+        <p class="discover__text">Discover top-of-the-art menus we picked for you </p>
+        <button class="discover__button"> Explore our resturants</button>
 
-    </div>
+    </section>
+    <section class="how-it-works">
+        <h2 class="how-it-works__heading">How it works</h2>
+        <ul>
 
-<footer>
-    <h3 class="logo-text">ohmyfood</h3>
-    <ul class="footer_links">
-        <li><i class="fa-solid fa-utensils"></i>Suggest a resturant</li>
-        <li><i class="fa-solid fa-handshake-angle"></i>Become a partner</li>
-        <li>Legal</li>
-        <li>Contact</li>
-    </ul>
-</footer>
+            <li>
+                <div class="how-it-works_step">
+                    <div class="how-it-works_step_number">1</div><i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Chose a restaurant</p>
+                </div>
+            </li>
+            <li>
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <i class="fa-solid fa-list step__icon"></i>
+                    <p class="step__info">Create your menu</p>
+
+                </div>
+            </li>
+            <li>
+                <div class="how-it-works_step">
+                    <div class="how-it-works_step_number">1</div>
+                    <i class="fa-solid fa-store"></i>
+                    <p>Enjoy it at the restaurant</p>
+
+                </div>
+            </li>
+        </ul>
+    </section>
+    <main class="restaurant">
+        <h2>Restaurants</h2>
+        <a href="#" class="restaurant-card">
+            <img class="restaurant-card_img" src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="an upscale dinner setting with a hand reaching up to it" />
+
+            <div class="restaurant-card_newflag">New</div>
+            <div class="restaurant-card_info">
+                <div class="text_block">
+                    <h3>The Full Palette </h3>
+                    <p> New York</p>
+
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </a>
+    </main>
+    <footer class="footer">
+        <h2 class="logo-text">ohmyfood</h2>
+        <ul class="footer__links">
+            <li><a href="#"><i class="fa-solid fa-utensils fa-fw footer__icon"></i>Suggest a resturant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle fa-fw footer__icon"></i>Become a partner</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="mailto:example@example.com">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

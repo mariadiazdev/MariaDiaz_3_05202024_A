@@ -1,62 +1,12 @@
-$primary_color: #9356DC;
-$secondary_color: #FF79DA;
-$tertiary_color: #99E2D0;
-$grey-shade: #EAEAEA;
-$dark-gray: #353535;
 
+@import "utils/variables";
+@import "utils/mixins";
+@import "vendors/normalize";
+@import "base/typography";
+@import "layout/header";
+@import "components/buttons";
+@import "layout/footer";
+@import "base/styling";
+@import "components/restaurant_card";
+@import "pages/home";
 
-$logo_font: "Shrikhand";
-$text_font: "Roboto";
-
-body {
-    font-family: $text_font;
-    margin: 0px;
-}
-
-.logo-text {
-    font-family: $logo_font;
-
-}
-
-header {
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.discover-section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    .discover_location {
-        background-color: $grey-shade;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    button {
-        color: white;
-        background-color: #FF79DA;
-        border: none;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 16px;
-        width: 30%;
-        padding: 10px;
-        background-image: linear-gradient(to bottom right, $secondary_color, $primary_color);
-    }
-
-}
-
-footer {
-    background-color: $dark-gray;
-    
-    color:white;
-    ul{
-        list-style: none;
-    }
-}
