@@ -1,16 +1,20 @@
-.restaurant-card{
+.restaurant-card {
+    display: block;
     height: 200px;
     margin: 20px;
     border-radius: 25px;
     background-color: white;
-    &_img{
-        height:60%;
+
+    &_img {
+        height: 60%;
     }
-    &_newflag{
+
+    &_newflag {
         background-color: $mint_color;
         width: 50px;
     }
-    &_info{
+
+    &_info {
         display: flex;
         justify-content: space-between;
     }

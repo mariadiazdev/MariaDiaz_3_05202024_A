@@ -11,7 +11,7 @@ button {
     box-shadow: 0 4px 8px $drop-shadow;
     // Hover effect
     &:hover {
-
+        box-shadow: 0 4px 8px darken($drop-shadow,5%);
         background-image: linear-gradient(to bottom, lighten($secondary_color, 5%), lighten($primary_color, 5%)) ;
     }
 

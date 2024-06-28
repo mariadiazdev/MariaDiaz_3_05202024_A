@@ -5,7 +5,7 @@
 }
 
 @mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints, detablet)){
+    @media screen and (min-width: map-get($breakpoints, tablet)){
         @content;
     }
 }
