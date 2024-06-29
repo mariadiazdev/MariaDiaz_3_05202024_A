@@ -1,11 +1,21 @@
 @mixin desktop-only {
-    @media screen and (min-width: map-get($breakpoints, desktop)){
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
     }
 }
 
 @mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints, tablet)){
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
+}
+
+@mixin highlight($size, $percentage) {
+    &:hover {
+        height: calc(#{$size} + (#{$size} * $percentage / 100)); //increase height by percentage
+    }
+
+    transition: width 0.5s ease-in-out,
+    height 0.5s ease-in-out; //smooth transition
+
 }

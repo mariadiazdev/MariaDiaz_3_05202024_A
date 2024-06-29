@@ -137,6 +137,9 @@
 
 .restaurant {
     background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-    
+
 }
