@@ -135,7 +135,23 @@
     }
 }
 
-.restaurant {
+.restaurant-section {
     background-color: $light-gray;
+    
+    padding: 30px 17.3px 70px;
+
+
+
+
+}
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    @include desktop-only{
+        flex-direction: row;
+    }
 
 }
