@@ -10,12 +10,11 @@
     }
 }
 
-@mixin highlight($size, $percentage) {
+@mixin highlight($before-size, $scale) {
+    transform: scale($before-size);
+    transition: transform 400ms;
     &:hover {
-        height: calc(#{$size} + (#{$size} * $percentage / 100)); //increase height by percentage
+        transform: scale($scale);
     }
-
-    transition: width 0.5s ease-in-out,
-    height 0.5s ease-in-out; //smooth transition
 
 }
