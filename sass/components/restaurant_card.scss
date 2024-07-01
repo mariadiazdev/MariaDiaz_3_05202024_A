@@ -80,15 +80,17 @@
     }
 
     &__favorite {
-        background-size: 100% 0%;
+        background-size: 100% 0% ;
         color: transparent;
-
+        transition: background-size 4s;
         &:hover {
             z-index: 20;
             background: linear-gradient(to bottom, $primary_color, $secondary_color);
             background-clip: text;
+            background-repeat: no-repeat;
             color: transparent;
             background-size: 100% 100%;
+           
         }
     }
 
