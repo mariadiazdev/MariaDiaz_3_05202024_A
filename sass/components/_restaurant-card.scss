@@ -12,7 +12,7 @@
             width: 490px;
         }
 
-        @include highlight(251px, 5)
+        @include highlight(251px, 1.05)
     }
 
 
@@ -38,14 +38,14 @@
         align-items: center;
         width: 80px;
         height: 29px;
-        box-shadow: 0 4px 8px darken($drop-shadow, 45%);
+        box-shadow: 0 4px 8px $drop-shadow;
 
     }
 
     &__info {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         width: 100%;
         padding: 12px;
 
@@ -75,20 +75,22 @@
 
     }
 
-    &__unfavorite::before {
-        font-weight: 300;
-    }
+    // &__unfavorite::before {
+    //     font-weight: 300;
+    // }
 
     &__favorite {
-        background-size: 100% 0%;
+        background-size: 100% 0% ;
         color: transparent;
-
+        transition: background-size 4s;
         &:hover {
             z-index: 20;
             background: linear-gradient(to bottom, $primary_color, $secondary_color);
             background-clip: text;
+            background-repeat: no-repeat;
             color: transparent;
             background-size: 100% 100%;
+           
         }
     }
 
