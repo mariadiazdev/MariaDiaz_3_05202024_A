@@ -344,6 +344,11 @@ img {
 .menu {
   padding: 20px 10px;
 }
+@media screen and (min-width: 599px) {
+  .menu {
+    padding: 20px 100px;
+  }
+}
 .menu__restaurant-name {
   font-family: "Shrikhand";
   font-size: 28px;
@@ -359,37 +364,59 @@ img {
   font-weight: 300;
   font-size: 16px;
   text-transform: uppercase;
+  margin: 0px;
 }
 
 .menu-item {
-  background-color: white;
   border-radius: 15px;
   border-color: black;
   box-shadow: 0 4px 8px #bbb;
-  display: flex;
-  flex-direction: row;
   overflow: hidden;
 }
 .menu-item__container {
   display: flex;
-  padding: 10px;
   flex-direction: row;
   justify-content: space-between;
-  width: 200000%;
+  width: calc(100% + 90px);
+  height: 100%;
   overflow: hidden;
   transition: transform 0.5s ease, width 0.5s ease;
 }
 .menu-item__container:hover {
-  width: 80%;
+  width: 100%;
+}
+.menu-item__text {
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  max-width: 85%;
+  min-width: 50px;
 }
 .menu-item__text > * {
   margin: 5px;
+}
+.menu-item__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10px;
+}
+.menu-item__info:hover + .menu-item__order .menu-item__icon {
+  animation: rotate 0.7s ease-in-out forwards;
 }
 .menu-item__price {
   display: flex;
   align-self: flex-end;
   align-items: center;
-  margin: 0px;
+  margin-right: 15px;
+  padding-bottom: 5px;
 }
 .menu-item__price > * {
   font-size: 15px;
@@ -400,10 +427,16 @@ img {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: 100px;
+  width: 90px;
 }
 .menu-item__icon {
   color: white;
+  font-size: 30px;
+}
+.menu-item__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .order {
@@ -418,10 +451,18 @@ img {
 }
 
 .restaurant__favorite-icon {
-  padding-top: 25px;
+  padding-top: 55px;
 }
 
-@keyframes rotateIcon {
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #99E2D0;
+  width: 40px;
+  margin-left: 0px;
+}
+
+@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
