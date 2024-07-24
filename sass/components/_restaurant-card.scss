@@ -45,7 +45,7 @@
     &__info {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         width: 100%;
         padding: 12px;
 
@@ -75,9 +75,9 @@
 
     }
 
-    &__unfavorite::before {
-        font-weight: 300;
-    }
+    // &__unfavorite::before {
+    //     font-weight: 300;
+    // }
 
     &__favorite {
         background-size: 100% 0% ;

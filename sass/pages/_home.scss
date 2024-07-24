@@ -80,6 +80,7 @@
         @include tablet-only {
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: center;
 
         }
     }
@@ -152,6 +153,8 @@
     gap: 20px;
     @include desktop-only{
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
 }
