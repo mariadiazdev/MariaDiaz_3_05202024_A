@@ -17,6 +17,8 @@
 }
 
 .menu {
+   
+    align-items: center;
     padding: 20px 10px;
     @include tablet-only {
         padding: 20px 100px;
@@ -52,6 +54,8 @@
     opacity: 0;
     animation: fadeInUp 0.5s forwards;
     animation-delay: 0s;
+    background-color: white;
+    
 
     &:nth-of-type(1) { animation-delay: 0s; }
     &:nth-of-type(2) { animation-delay: 0.2s; }
@@ -103,7 +107,7 @@
         padding: 10px;
 
         &:hover + .menu-item__order .menu-item__icon {
-            animation: rotate 0.7s ease-in-out forwards;
+            animation: rotate 0.4s ease-in-out forwards;
         }
     }
 

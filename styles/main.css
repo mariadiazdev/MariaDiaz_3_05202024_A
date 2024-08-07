@@ -342,6 +342,7 @@ img {
 }
 
 .menu {
+  align-items: center;
   padding: 20px 10px;
 }
 @media screen and (min-width: 599px) {
@@ -378,6 +379,7 @@ img {
   opacity: 0;
   animation: fadeInUp 0.5s forwards;
   animation-delay: 0s;
+  background-color: white;
 }
 .menu-item:nth-of-type(1) {
   animation-delay: 0s;
@@ -442,7 +444,7 @@ img {
   padding: 10px;
 }
 .menu-item__info:hover + .menu-item__order .menu-item__icon {
-  animation: rotate 0.7s ease-in-out forwards;
+  animation: rotate 0.4s ease-in-out forwards;
 }
 .menu-item__price {
   display: flex;
